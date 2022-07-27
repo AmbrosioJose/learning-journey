@@ -1,2 +1,2 @@
 # learning-journey
-My journey to matering computer science fundamentals
+My journey to mastering computer science fundamentals
