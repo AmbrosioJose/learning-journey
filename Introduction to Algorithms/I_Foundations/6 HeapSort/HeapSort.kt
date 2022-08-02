@@ -5,6 +5,11 @@ class Heap(a: MutableList<Int>) {
     var heapSize = 0
     private val list: MutableList<Int> = a
 
+
+    init {
+        buildMaxHeap()
+    }
+
     fun parent(i: Int): Int{
         return i shr(1)
     }
@@ -63,8 +68,5 @@ class Heap(a: MutableList<Int>) {
         }
     }
 
-    init {
-        buildMaxHeap()
-    }
 
 }
