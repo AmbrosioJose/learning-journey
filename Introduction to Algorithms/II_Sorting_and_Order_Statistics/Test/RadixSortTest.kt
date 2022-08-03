@@ -1,6 +1,6 @@
-package I_Foundations.Test
+package II_Sorting_and_Order_Statistics.Test
 
-import I_Foundations.`8 Sorting in Linear Time`.radixSort
+import II_Sorting_and_Order_Statistics.`8 Sorting in Linear Time`.radixSort
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

@@ -1,6 +1,6 @@
-package I_Foundations.Test
+package II_Sorting_and_Order_Statistics.Test
 
-import I_Foundations.`6 HeapSort`.Heap
+import II_Sorting_and_Order_Statistics.`6 HeapSort`.Heap
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.*
 

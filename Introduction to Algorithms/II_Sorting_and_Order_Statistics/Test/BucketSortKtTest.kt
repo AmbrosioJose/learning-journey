@@ -1,8 +1,4 @@
-package I_Foundations.Test
-
-import I_Foundations.`8 Sorting in Linear Time`.bucketSort
-import I_Foundations.`8 Sorting in Linear Time`.countingSort
-import org.junit.jupiter.api.Assertions
+import II_Sorting_and_Order_Statistics.`8 Sorting in Linear Time`.bucketSort
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

@@ -1,4 +1,4 @@
-package I_Foundations.`7 Quicksort`
+package II_Sorting_and_Order_Statistics.`7 Quicksort`
 
 /**
  * Randomized quicksort

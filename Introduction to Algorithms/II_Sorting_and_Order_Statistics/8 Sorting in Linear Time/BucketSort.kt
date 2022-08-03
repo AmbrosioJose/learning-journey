@@ -1,4 +1,4 @@
-package I_Foundations.`8 Sorting in Linear Time`
+package II_Sorting_and_Order_Statistics.`8 Sorting in Linear Time`
 
 fun bucketSort(list: MutableList<Double>){
     val buckets = MutableList<ListNode?>(list.size){null}

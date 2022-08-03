@@ -1,9 +1,14 @@
-package I_Foundations.`6 HeapSort`
+package II_Sorting_and_Order_Statistics.`6 HeapSort`
 
-class MinHeap(a: MutableList<Int>) {
+class Heap(a: MutableList<Int>) {
 
     var heapSize = 0
     private val list: MutableList<Int> = a
+
+
+    init {
+        buildMaxHeap()
+    }
 
     fun parent(i: Int): Int{
         return i shr(1)
@@ -17,25 +22,25 @@ class MinHeap(a: MutableList<Int>) {
         return (i shl(1)) + 2
     }
 
-    fun buildMinHeap(){
+    fun buildMaxHeap(){
         heapSize = list.size
         for(i in list.size / 2 downTo 0){
-            minHeapify(i)
+            maxHeapify(i)
         }
     }
 
-    fun minHeapify(i: Int){
-        var min = i
+    fun maxHeapify(i: Int){
+        var max = i
         val l = left(i)
         val r = right(i)
 
-        if(l < heapSize && list[l] < list[min])
-            min = l
-        if(r < heapSize && list[r] < list[min])
-            min = r
-        if(min != i){
-            swap(min, i)
-            minHeapify(min)
+        if(l < heapSize && list[l] > list[max])
+            max = l
+        if(r < heapSize && list[r] > list[max])
+            max = r
+        if(max != i){
+            swap(max, i)
+            maxHeapify(max)
         }
     }
 
@@ -45,27 +50,23 @@ class MinHeap(a: MutableList<Int>) {
         list[j] = temp
     }
 
-    fun extractMin(): Int{
-        val minValue = list[0]
+    fun extractMax(): Int{
+        val maxValue = list[0]
         swap(0, heapSize - 1)
         heapSize--
-        minHeapify(0)
-        return minValue
+        maxHeapify(0)
+        return maxValue
     }
 
 
     fun heapSort(){
-        buildMinHeap()
+        buildMaxHeap()
         for(i in list.size - 1 downTo 1){
             swap(0, i)
             heapSize--
-            minHeapify(0)
+            maxHeapify(0)
         }
-        list.reverse()
     }
 
-    init {
-        buildMinHeap()
-    }
 
 }

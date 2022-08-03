@@ -1,4 +1,4 @@
-package I_Foundations.`6 HeapSort`
+package II_Sorting_and_Order_Statistics.`6 HeapSort`
 
 import java.lang.IndexOutOfBoundsException
 
