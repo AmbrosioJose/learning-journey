@@ -5,7 +5,7 @@ package I_Foundations.`8 Sorting in Linear Time`
  * Counting sort
  *
  * Assumes that each of the n input elements is between 0 and k.
- * When k = O(n) the sort time is θ(n)
+ * When k = O(n) the sort time is θ(n + k) => θ(n)
  *
  * @param list where each element at i is 0 <= list[i] <= [k]
  * @param k
