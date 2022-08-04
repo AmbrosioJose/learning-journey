@@ -1,13 +1,24 @@
 package III_Data_Structures.Stacks_and_Queues
 
 class Queue {
+    private var q = IntArray(100)
+    var tail = 0
+    var head = 0
+
 
     fun enqueue(x: Int){
-
+        if(head == (tail + 1) % q.size)
+            throw StackOverflowError("Queue size exceeded")
+        q[tail] = x
+        tail = (tail + 1) % q.size
     }
 
     fun dequeue(): Int{
-        return 0
+        if(tail == head)
+            throw EmptyQueue("Called dequeue on an empty queue")
+        val result = q[head]
+        head = (head + 1) % q.size
+        return result
     }
 }
 

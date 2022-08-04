@@ -40,7 +40,7 @@ internal class StackTest {
         stack.push(1)
         stack.pop()
         stack.pop()
-        assertEquals(3, stack.pop())
+        assertEquals(8, stack.pop())
     }
 
     @Test

@@ -1,19 +1,26 @@
 package III_Data_Structures.Stacks_and_Queues
 
-class Stack() {
+class Stack {
     val list = MutableList<Int>(100){0}
     var top = -1
 
     fun isEmpty():Boolean{
-        return true
+        return top < 0
     }
 
     fun push(x: Int){
-
+        top++
+        if(top == list.size){
+            list.add(x)
+        } else {
+            list[top] = x
+        }
     }
 
     fun pop(): Int{
-        return 0
+        if(top < 0)
+            throw EmptyStack("Pop was called on an empty stack")
+        return list[top--]
     }
 }
 

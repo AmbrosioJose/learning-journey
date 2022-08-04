@@ -17,7 +17,6 @@ internal class QueueTest {
         q.enqueue(5)
 
         assertEquals(5, q.dequeue())
-
     }
 
     @Test
