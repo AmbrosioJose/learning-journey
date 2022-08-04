@@ -10,3 +10,6 @@ class Queue {
         return 0
     }
 }
+
+
+class EmptyQueue(message: String): Exception(message)

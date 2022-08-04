@@ -16,3 +16,5 @@ class Stack() {
         return 0
     }
 }
+
+class EmptyStack(message: String): Exception(message)

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 
 import III_Data_Structures.Stacks_and_Queues.Stack
+import III_Data_Structures.Stacks_and_Queues.EmptyStack
 
 internal class StackTest {
 
@@ -40,5 +41,21 @@ internal class StackTest {
         stack.pop()
         stack.pop()
         assertEquals(3, stack.pop())
+    }
+
+    @Test
+    fun pop2() {
+        val stack = Stack()
+        stack.push(5)
+        stack.push(3)
+        stack.push(8)
+        stack.push(15)
+        stack.push(1)
+        stack.pop()
+        stack.pop()
+        stack.pop()
+        stack.pop()
+        stack.pop()
+        assertThrows(EmptyStack::class.java) { stack.pop() }
     }
 }
