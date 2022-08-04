@@ -1,4 +1,4 @@
-package III_Data_Structures.Stacks_and_Queues
+package III_Data_Structures.ElementaryDataStructures
 
 class Queue {
     private var q = IntArray(100)

@@ -1,4 +1,4 @@
-package III_Data_Structures.Stacks_and_Queues
+package III_Data_Structures.ElementaryDataStructures
 
 class Stack {
     val list = MutableList<Int>(100){0}

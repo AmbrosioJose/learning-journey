@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-import III_Data_Structures.Stacks_and_Queues.Queue
-import III_Data_Structures.Stacks_and_Queues.EmptyQueue
+import III_Data_Structures.ElementaryDataStructures.Queue
+import III_Data_Structures.ElementaryDataStructures.EmptyQueue
 
 internal class QueueTest {
 
