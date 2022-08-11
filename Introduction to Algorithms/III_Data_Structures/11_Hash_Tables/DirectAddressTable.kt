@@ -1,7 +1,5 @@
 package III_Data_Structures.`11_Hash_Tables`
 
-class SatelliteData(val key: Int, val data: String)
-
 /**
  * Direct address table
  *
@@ -11,7 +9,7 @@ class SatelliteData(val key: Int, val data: String)
  * @constructor Create empty Direct address table
  */
 class DirectAddressTable {
-    val table = Array<SatelliteData?>(10){null}
+    private val table = Array<SatelliteData?>(10){null}
 
     fun search(key: Int): SatelliteData? {
         return table[key]
