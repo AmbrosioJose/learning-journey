@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-import III_Data_Structures.ElementaryDataStructures.Stack
-import III_Data_Structures.ElementaryDataStructures.EmptyStack
+import III_Data_Structures.`10_Elementary_Data_Structures`.Stack
+import III_Data_Structures.`10_Elementary_Data_Structures`.EmptyStack
 
 internal class StackTest {
 

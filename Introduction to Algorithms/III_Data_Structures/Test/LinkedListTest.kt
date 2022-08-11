@@ -1,8 +1,8 @@
 package III_Data_Structures.Test
 
 import org.junit.jupiter.api.Test
-import III_Data_Structures.ElementaryDataStructures.LinkedList
-import III_Data_Structures.ElementaryDataStructures.Node
+import III_Data_Structures.`10_Elementary_Data_Structures`.LinkedList
+import III_Data_Structures.`10_Elementary_Data_Structures`.Node
 import org.junit.jupiter.api.Assertions.*
 
 class LinkedListTest {
