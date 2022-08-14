@@ -1,6 +1,6 @@
 package II_Sorting_and_Order_Statistics.Test
 
-import II_Sorting_and_Order_Statistics.`8 Sorting in Linear Time`.countingSort
+import II_Sorting_and_Order_Statistics._8_Sorting_in_Linear_Time.countingSort
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

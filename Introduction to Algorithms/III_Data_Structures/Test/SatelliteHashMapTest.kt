@@ -1,8 +1,8 @@
 package III_Data_Structures.Test
 
-import III_Data_Structures.`11_Hash_Tables`.SatelliteData
-import III_Data_Structures.`11_Hash_Tables`.SatelliteHashTableBuilder
-import III_Data_Structures.`11_Hash_Tables`.SatelliteTableType
+import III_Data_Structures._11_Hash_Tables.SatelliteData
+import III_Data_Structures._11_Hash_Tables.SatelliteHashTableBuilder
+import III_Data_Structures._11_Hash_Tables.SatelliteTableType
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.extension.ExtensionContext
 import org.junit.jupiter.params.ParameterizedTest

@@ -1,6 +1,6 @@
 package II_Sorting_and_Order_Statistics.Test
 
-import II_Sorting_and_Order_Statistics.`6 HeapSort`.MinHeap
+import II_Sorting_and_Order_Statistics._6_HeapSort.MinHeap
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.*
 

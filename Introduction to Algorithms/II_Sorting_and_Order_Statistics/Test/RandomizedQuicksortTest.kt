@@ -1,6 +1,6 @@
 package II_Sorting_and_Order_Statistics.Test
 
-import II_Sorting_and_Order_Statistics.`7 Quicksort`.randomizedQuicksort
+import II_Sorting_and_Order_Statistics._7_Quicksort.randomizedQuicksort
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

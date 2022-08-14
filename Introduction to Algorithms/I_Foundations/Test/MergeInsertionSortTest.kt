@@ -1,6 +1,6 @@
 package I_Foundations.Test
 
-import I_Foundations.`2 Getting Started`.mergeInsertionSortInit
+import I_Foundations._2_Getting_Started.mergeInsertionSortInit
 import org.junit.jupiter.api.Assertions
 
 class MergeInsertionSortTest {

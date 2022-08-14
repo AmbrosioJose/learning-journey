@@ -1,4 +1,4 @@
-package I_Foundations.`2 Getting Started`
+package I_Foundations._2_Getting_Started
 
 /**
  * Insertion sort

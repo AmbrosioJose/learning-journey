@@ -1,4 +1,4 @@
-package III_Data_Structures.`10_Elementary_Data_Structures`
+package III_Data_Structures._10_Elementary_Data_Structures
 
 class LinkedList {
     // sentinel node

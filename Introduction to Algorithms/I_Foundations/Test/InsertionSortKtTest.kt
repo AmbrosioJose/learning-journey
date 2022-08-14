@@ -1,7 +1,6 @@
 package I_Foundations.Test
 
-import I_Foundations.`2 Getting Started`.insertionSort
-import I_Foundations.`2 Getting Started`.mergeSortInit
+import I_Foundations._2_Getting_Started.insertionSort
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.*
 

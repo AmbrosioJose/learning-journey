@@ -1,6 +1,6 @@
 package III_Data_Structures.Test
 
-import III_Data_Structures.`11_Hash_Tables`.OpenAddressingTable
+import III_Data_Structures._11_Hash_Tables.OpenAddressingTable
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Test

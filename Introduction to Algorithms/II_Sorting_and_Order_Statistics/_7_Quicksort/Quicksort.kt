@@ -1,4 +1,4 @@
-package II_Sorting_and_Order_Statistics.`7 Quicksort`
+package II_Sorting_and_Order_Statistics._7_Quicksort
 
 /**
  * Quicksort

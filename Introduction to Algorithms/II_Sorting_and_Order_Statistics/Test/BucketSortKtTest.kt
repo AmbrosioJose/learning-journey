@@ -1,4 +1,4 @@
-import II_Sorting_and_Order_Statistics.`8 Sorting in Linear Time`.bucketSort
+import II_Sorting_and_Order_Statistics._8_Sorting_in_Linear_Time.bucketSort
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
