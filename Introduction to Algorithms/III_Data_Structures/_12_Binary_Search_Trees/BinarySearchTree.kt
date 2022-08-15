@@ -1,8 +1,28 @@
 package III_Data_Structures._12_Binary_Search_Trees
 
+/**
+ * Binary search tree
+ *
+ * Let x be a node in a binary search tree.
+ * If y is a node in the left subtree of x, then y.value <= x.value.
+ * If y is a node in the right subtree of x, then y.value <= x.value.
+ *
+ * Basic operations take θ(h) worst-case time, where h is the height of the tree.
+ * In a binary search tree take θ(lgn) time but if the tree is a linear chain of nodes
+ * the worst-case time is θ(n). This can be deterred by adding inputs randomly. A red black tree can also be used.
+ *
+ * @constructor Create empty Binary search tree
+ */
 class BinarySearchTree {
     var root: Node? = null
 
+    /**
+     * Insert
+     *
+     * When inserting a new value it must be done in a way that preserves the binary search tree properties
+     *
+     * @param insertingNode
+     */
     fun insert(insertingNode: Node){
         var currentNode = root
         var insertingNodeParent : Node? = null
@@ -23,16 +43,14 @@ class BinarySearchTree {
             insertingNodeParent.right = insertingNode
     }
 
-    fun recursiveSearch(node: Node?, value: Int): Node?{
-       if(node?.value == null)
-           return node
-
-        if (node.value < value)
-            return recursiveSearch(node.left, value)
-
-        return recursiveSearch(node.right, value)
-    }
-
+    /**
+     * Search
+     *
+     * Takes O(h) worst-case time, where h is the height of the tree.
+     *
+     * @param value
+     * @return
+     */
     fun search(value: Int): Node? {
         var curr = root
         while(curr != null && curr.value != value){
@@ -42,6 +60,27 @@ class BinarySearchTree {
                 curr = curr.right
         }
         return curr
+    }
+
+    /**
+     * Recursive search
+     *
+     * Similar to search but done recursively. Iteratively is usually more efficient in most computers
+     * @see search
+     *
+     *
+     * @param node
+     * @param value
+     * @return Node with matching value if it exists within the given tree. Otherwise null
+     */
+    fun recursiveSearch(node: Node?, value: Int): Node?{
+        if(node?.value == null)
+            return node
+
+        if (node.value < value)
+            return recursiveSearch(node.left, value)
+
+        return recursiveSearch(node.right, value)
     }
 
     fun delete(value: Int) {
@@ -99,6 +138,15 @@ class BinarySearchTree {
         }
     }
 
+
+    /**
+     * Transplant
+     *
+     * Node [a] is replaced by node [b].
+     *
+     * @param a
+     * @param b
+     */
     private fun transplant(a: Node, b: Node?){
         if(a.parent == null)
             root = b
@@ -110,6 +158,16 @@ class BinarySearchTree {
             b.parent = a.parent
     }
 
+
+    /**
+     * Tree minimum
+     *
+     * The smallest value is always the left most node
+     *
+     * @param node
+     *
+     * @return Node with the smallest value within the [node] subtree
+     */
     fun treeMinimum(node: Node): Node{
         var curr = node
         while(node.left != null){
@@ -118,6 +176,14 @@ class BinarySearchTree {
         return curr
     }
 
+    /**
+     * Tree maximum
+     *
+     * The largest value is always the right most node
+     *
+     * @param node
+     * @return the largest value in the node subtree
+     */
     fun treeMaximum(node: Node): Node {
         var curr = node
         while(node.right != null){
@@ -126,6 +192,13 @@ class BinarySearchTree {
         return curr
     }
 
+
+    /**
+     * Tree successor
+     *
+     * @param node
+     * @return The node with the smallest value greater than [node.value]
+     */
     fun treeSuccessor(node: Node): Node?{
         if(node.right != null)
             return treeMinimum(node.right!!)
@@ -138,6 +211,13 @@ class BinarySearchTree {
         return currParentNode
     }
 
+
+    /**
+     * Tree predecessor
+     *
+     * @param node
+     * @return The node with the largest value smaller than [node.value]
+     */
     fun treePredecessor(node: Node): Node? {
         if(node.left != null)
             return treeMaximum(node.left!!)
@@ -150,11 +230,48 @@ class BinarySearchTree {
         return currParentNode
     }
 
+    /**
+     * In order print
+     *
+     * Prints the values of nodes in the given tree in sorted order
+     *
+     * @param node
+     */
     fun inOrderPrint(node: Node?){
         if(node != null){
             inOrderPrint(node.left)
             print(" ${node.value}")
             inOrderPrint(node.right)
+        }
+    }
+
+    /**
+     * Pre-order print
+     *
+     * Prints the values of nodes in the given tree by printing the parent first then its children
+     *
+     * @param node
+     */
+    fun preOrder(node: Node?){
+        if(node != null){
+            print(" ${node.value}")
+            inOrderPrint(node.left)
+            inOrderPrint(node.right)
+        }
+    }
+
+    /**
+     * Post order print
+     *
+     * Prints the values of nodes in the given tree by printing the parent after the children are printed
+     *
+     * @param node
+     */
+    fun postOrderPrint(node: Node?){
+        if(node != null){
+            inOrderPrint(node.left)
+            inOrderPrint(node.right)
+            print(" ${node.value}")
         }
     }
 }
