@@ -46,7 +46,7 @@ class BinarySearchTree {
     /**
      * Search
      *
-     * Takes O(h) worst-case time, where h is the height of the tree.
+     * Takes θ(h) worst-case time, where h is the height of the tree.
      *
      * @param value
      * @return
