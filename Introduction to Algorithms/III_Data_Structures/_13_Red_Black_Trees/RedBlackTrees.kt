@@ -301,6 +301,7 @@ class RedBlackTrees {
      * is a right child or a left child.
      *
      * Cases assuming [node] is a left (reflected for right)
+     * We keep going through the loop that handles the cases is [focusNode] ≠ root and [focusNode].color ≠ BLACK
      *
      * Cases:
      * 1) [node]'s sibling is red
